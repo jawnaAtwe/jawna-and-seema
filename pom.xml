@@ -3,4 +3,40 @@
   <groupId>BookLibrary</groupId>
   <artifactId>BookLibraryProject</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+ <dependencies>
+   <!-- dependencies injection -->
+      <dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.13.1</version>
+    <scope>test</scope>
+     </dependency>
+     
+     <dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>6.9.1</version>
+</dependency>
+
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>6.9.1</version>
+</dependency>
+
+
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-picocontainer</artifactId>
+    <version>6.9.1</version>
+    <scope>test</scope>
+</dependency>
+
+     
+  </dependencies>
+  <properties>
+     <maven.compiler.source>1.8</maven.compiler.source>
+     <maven.compiler.target>1.8</maven.compiler.target>
+</properties>
+
 </project>
