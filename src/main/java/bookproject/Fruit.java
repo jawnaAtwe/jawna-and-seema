@@ -26,7 +26,11 @@ public class Fruit {
 		
 		return (b);
 	}
-
+	public void log() {
+		// TODO Auto-generated method stub
+		nameT="";
+		passT="";
+	}
 
 
 }

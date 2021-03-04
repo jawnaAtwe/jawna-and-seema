@@ -40,7 +40,7 @@ public boolean P1;
 
 	@Then("Message displayed log out successfully")
 	public void message_displayed_log_out_successfully() {
-	
+	fc1.log();
 	}
 
 }
