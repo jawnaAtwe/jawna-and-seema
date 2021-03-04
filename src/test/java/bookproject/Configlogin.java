@@ -6,9 +6,10 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="uses_case",glue= "/jawna-and-seema/uses_case/login.feature")
-
+@CucumberOptions(features="uses_case",glue= "bookproject")
 public class Configlogin {
-
-
+	
+	
+	
+	
 }
