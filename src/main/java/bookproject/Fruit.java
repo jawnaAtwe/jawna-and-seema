@@ -4,12 +4,10 @@ import java.util.ArrayList;
 
 public class Fruit {
 	
+	public static String nameT="seema",passT="123s"; // UserName & password 
 	
-	
-	public static String nameT="",passT="";
 	public boolean b;
 
-	
 	public static void main(String[] args) {
 		
 	}
@@ -30,6 +28,13 @@ public class Fruit {
 		// TODO Auto-generated method stub
 		nameT="";
 		passT="";
+	}
+	
+	public boolean Check(String string, String string2) {
+
+		b=(nameT.equalsIgnoreCase(string))&&(passT.equalsIgnoreCase(string2));
+		return (b);
+		
 	}
 
 
