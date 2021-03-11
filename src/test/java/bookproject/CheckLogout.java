@@ -21,7 +21,7 @@ public boolean P1;
 	@Given("the user must have loged in to the application")
 	public void the_user_must_have_loged_in_to_the_application() {
 		
-		P1= fc1.Check("seema","123s");
+		P1= fc1.Checkpass();
 	}
 	
 
