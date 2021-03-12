@@ -9,7 +9,7 @@ public class Fruit {
 	public static ArrayList<Add> bookList= new ArrayList<Add>();
 	int A=0,q=0,count=0;
 	public static String nameT="seema",passT="123s",n="",p=""; // UserName & password 
-	public boolean b=false,c=false,ch=false,v=false;
+	public boolean b=false,c=false,v=false;
 	
 	public static void main(String[] args) {
 		
@@ -72,14 +72,12 @@ public void addbook(Add book1) {
 	public boolean booleanadd() {
 		if (A==0)
 		return true;
-		else { 
-			ch=Checkpass();
-			if(ch)
-				System.out.print(0);
+		
+		else
 			return false;	
 	}}
 
 	
 
-}
+
 

@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="bookproject.CheckLogin" project="jawna-and-seema" 
     file="/jawna-and-seema/src/test/java/bookproject/CheckLogin.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="322" width="353" x="161" y="-20"/>    
+    <position height="322" width="353" x="265" y="-19"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="bookproject.CheckSearch" project="jawna-and-seema" 
     file="/jawna-and-seema/src/test/java/bookproject/CheckSearch.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="538" width="423" x="554" y="-20"/>    
+    <position height="538" width="423" x="658" y="-19"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,7 +21,7 @@
   </class>  
   <class id="3" language="java" name="bookproject.Config" project="jawna-and-seema" 
     file="/jawna-and-seema/src/test/java/bookproject/Config.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="88" width="104" x="1017" y="-20"/>    
+    <position height="88" width="104" x="1121" y="-19"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,7 +30,7 @@
   </class>  
   <class id="4" language="java" name="bookproject.CheckAdd" project="jawna-and-seema" 
     file="/jawna-and-seema/src/test/java/bookproject/CheckAdd.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="304" width="477" x="1161" y="-20"/>    
+    <position height="304" width="477" x="1265" y="-19"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -39,7 +39,7 @@
   </class>  
   <class id="5" language="java" name="bookproject.CheckLogout" project="jawna-and-seema" 
     file="/jawna-and-seema/src/test/java/bookproject/CheckLogout.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="196" width="346" x="1678" y="-20"/>    
+    <position height="196" width="346" x="1782" y="-19"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -48,7 +48,7 @@
   </class>  
   <class id="6" language="java" name="bookproject.Add" project="jawna-and-seema" 
     file="/jawna-and-seema/src/main/java/bookproject/Add.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="957" y="1147"/>    
+    <position height="322" width="205" x="643" y="945"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -57,7 +57,7 @@
   </class>  
   <class id="7" language="java" name="bookproject.Fruit" project="jawna-and-seema" 
     file="/jawna-and-seema/src/main/java/bookproject/Fruit.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="951" y="785"/>    
+    <position height="394" width="192" x="643" y="511"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -65,7 +65,7 @@
     </display>  
   </class>  
   <association id="8">    
-    <end type="SOURCE" refId="4" navigable="false">      
+    <end type="SOURCE" refId="2" navigable="false">      
       <attribute id="9" name="fc1"/>      
       <multiplicity id="10" minimum="0" maximum="1"/>    
     </end>    
@@ -73,43 +73,43 @@
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="11">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="12" name="Book1"/>      
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="12" name="fc1"/>      
       <multiplicity id="13" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
+    <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="14">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="15" name="bookList"/>      
-      <multiplicity id="16" minimum="0" maximum="2147483647"/>    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="15" name="fc1"/>      
+      <multiplicity id="16" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
+    <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="17">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="18" name="fc1"/>      
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="18" name="fc"/>      
       <multiplicity id="19" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="20">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="21" name="fc"/>      
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="21" name="Book1"/>      
       <multiplicity id="22" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
+    <end type="TARGET" refId="6" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="23">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="24" name="fc1"/>      
-      <multiplicity id="25" minimum="0" maximum="1"/>    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="24" name="bookList"/>      
+      <multiplicity id="25" minimum="0" maximum="2147483647"/>    
     </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
+    <end type="TARGET" refId="6" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

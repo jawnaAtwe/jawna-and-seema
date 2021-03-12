@@ -1,10 +1,12 @@
 package bookproject;
-
+import javax.swing.JOptionPane;
 import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+
+import javax.swing.JOptionPane;
 
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
@@ -70,7 +72,7 @@ public class CheckSearch {
 			
 			
 			title.add(m.get("signature"));
-            System.out.println(m.get("signature"));
+            
 		}
 		
 			
@@ -102,7 +104,7 @@ public class CheckSearch {
 			if(Psub) {
 				
 				author.add(m.get("signature"));
-				System.out.println(m.get("signature"));
+				
 			}
 			
 				
@@ -142,7 +144,7 @@ public class CheckSearch {
 			if(Psub) {
 				
 				isbn.add(m.get("signature"));
-				System.out.println(m.get("signature"));
+				
 			}
 			
 				
@@ -237,9 +239,9 @@ public class CheckSearch {
 	@Then("show a Message there is not any thing with this substring")
 	public void show_a_message_there_is_not_any_thing_with_this_substring() {
 	    Psub=false;
-		if( login.isEmpty())
+		if( login.isEmpty()) {
 			Psub=true;
-		
+		JOptionPane.showMessageDialog(null, "not any thing with this substring ");}
 		assertTrue(Psub);
 	
 	}
