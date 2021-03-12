@@ -31,6 +31,33 @@ public class Fruit {
 		c=((n.equalsIgnoreCase(nameT))&&(p.equalsIgnoreCase(passT)));
 		return (c);
 	}
+	
+public void addbook(Add book1) {
+		
+		A=0;
+	for(int i=0;i<bookList.size();i++) {
+	if(bookList.get(i).getISBN().equalsIgnoreCase(book1.getISBN())) {	
+		
+		A=1;
+	}
+		
+	}
+	
+	if(A==0)
+		bookList.add(book1);
+	}
+
+
+	
+	public boolean booleanadd() {
+		if (A==0)
+		return true;
+		else {
+			ch=Checkpass();
+			if(ch)
+			JOptionPane.showMessageDialog(null, "This book is already added!");
+			return false;	
+	}}
 
 	
 
