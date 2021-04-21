@@ -22,7 +22,7 @@ public boolean P1;
 	@Given("the user must have loged in to the application")
 	public void the_user_must_have_loged_in_to_the_application() {
 		
-		P1= fc1.Checkpass();
+		P1= fc1.checkpass();
 	}
 	
 
@@ -43,7 +43,7 @@ public boolean P1;
 	@Then("Message displayed log out successfully")
 	public void message_displayed_log_out_successfully() {
 		
-		JOptionPane.showMessageDialog(null, "log out successfully *_^");
+		//JOptionPane.showMessageDialog(null, "log out successfully *_^");
 	   
 	}
 

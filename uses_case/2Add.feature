@@ -23,5 +23,4 @@ Examples:
 Scenario: Add a book when the admin is not logged in
 Given the admin did not loged in
 When the admin click on add book button
-Then the book will not add to the library
-And Show a message please Login
+Then the book will not add to the library and Show a message please Login
