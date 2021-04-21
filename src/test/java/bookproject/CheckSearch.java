@@ -55,7 +55,7 @@ public class CheckSearch {
 	@Given("the admin is not logged in")
 	public void the_admin_is_not_logged_in() {
 	    	
-		P1=fc1.Checkpass();	
+		P1=fc1.checkpass();	
 		
 		
 	}
@@ -64,7 +64,11 @@ public class CheckSearch {
 	public void they_search_for_the_substring_of_title(String string) {
 		
 		Psub=false;
-		if(!P1) {
+		
+		searchtitle(string);	
+		}
+
+	private void searchtitle(String string) {
 		for(Map<String,String> m:userList) {
 			
 		Psub=m.get("title").contains(string);
@@ -76,8 +80,8 @@ public class CheckSearch {
 		}
 		
 			
-		}	
-		}}
+		}
+	}
 	
 	@Then("they find the book has a signature T {string}")
 	public void they_find_the_book_has_a_signature_t(String string) {
@@ -86,18 +90,20 @@ public class CheckSearch {
 		for(String T:title) {
 		Psub=T.equalsIgnoreCase(string);
 			if(Psub)
-				{System.out.println(T);
+				{
 			break;}
 		}
-		assertTrue(Psub);
+		if(P1==false)
+			assertTrue(Psub);
+			else 
+				assertTrue(!Psub);
 		
 	}
 	
 
 	@When("they search for the substring of author {string}")
 	public void they_search_for_the_substring_of_author(String string) {
-		Psub=false;
-		if(!P1) {
+		
 		for(Map<String,String> m:userList) {
 			
 			Psub=m.get("author").contains(string);
@@ -108,12 +114,16 @@ public class CheckSearch {
 			}
 			
 				
-			}
 			
+			
+	    	}
 		
-		
-		
-	    	}}
+	
+	
+	
+	
+	
+	}
 	
 	
 	@Then("they find the book has a signature A {string}")
@@ -124,11 +134,15 @@ public class CheckSearch {
 		for(String T:author) {
 		Psub=T.equalsIgnoreCase(string);
 			if(Psub)
-				{System.out.println(T);
+				{
 			break;}
 		}
+		
+		if(P1==false)
 		assertTrue(Psub);
 		
+		else 
+			assertTrue(!Psub);
 		
 		
 		
@@ -137,7 +151,7 @@ public class CheckSearch {
 	@When("they search for the substring of isbn {string}")
 	public void they_search_for_the_substring_of_isbn(String string) {
 		Psub=false;
-		if(!P1) {
+		
 		for(Map<String,String> m:userList) {
 			
 			Psub=m.get("isbn").contains(string);
@@ -148,7 +162,7 @@ public class CheckSearch {
 			}
 			
 				
-			}
+			
 			
 		
 		
@@ -164,10 +178,14 @@ public class CheckSearch {
 		for(String T:isbn) {
 		Psub=T.equalsIgnoreCase(string);
 			if(Psub)
-				{System.out.println(T);
+				{
 			break;}
 		}
+		if(!P1) {
 		assertTrue(Psub);
+		}
+		else 
+			assertTrue(!Psub);
 		
 			
 	}
@@ -218,7 +236,7 @@ public class CheckSearch {
 		for(String T:login) {
 		Psub=T.equalsIgnoreCase(string);
 			if(Psub)
-				{System.out.println(T);
+				{
 			break;
 			}
 		}
@@ -231,7 +249,7 @@ public class CheckSearch {
 	@Given("the admin is  logged in")
 	public void the_admin_is_logged_in() {
 		
-		P1=fc1.Checkpass();
+		P1=fc1.checkpass();
 	    
 	}
 
@@ -239,11 +257,16 @@ public class CheckSearch {
 	@Then("show a Message there is not any thing with this substring")
 	public void show_a_message_there_is_not_any_thing_with_this_substring() {
 	    Psub=false;
-		if( login.isEmpty()) {
-			Psub=true;
-		JOptionPane.showMessageDialog(null, "not any thing with this substring ");}
+		empty();
 		assertTrue(Psub);
 	
+	}
+
+	private void empty() {
+		if( login.isEmpty()) {
+			Psub=true;
+		//JOptionPane.showMessageDialog(null, "not any thing with this substring ");
+			}
 	}
 	
 	
@@ -253,17 +276,21 @@ public class CheckSearch {
 	 
 		Psub=false;
 		P1=false;
+		forlogin(string, string2); assertTrue(P1);
+
+		
+	}
+
+	private void forlogin(String string, String string2) {
 		for(String t: login) {
 			
 			Psub=(t.equalsIgnoreCase(string) || t.equalsIgnoreCase(string2));
 			if(Psub) {
 				P1=true;
-				System.out.println(t);
+				
 			}
 			
-		} assertTrue(P1);
-
-		
+		}
 	}
 
 	

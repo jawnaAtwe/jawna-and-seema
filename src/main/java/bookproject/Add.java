@@ -2,48 +2,39 @@ package bookproject;
 
 public class Add {
 
-	private String ISBN;
-	private String Title;
-	private String Author;
-	private String Signature;
+	private String isbn;
+	@SuppressWarnings("unused")
+	private String title;
+	@SuppressWarnings("unused")
+	private String author;
+	@SuppressWarnings("unused")
+	private String signature;
 	
 
 	public Add(String iSBN2, String title2, String author2, String signature2) {
-		ISBN=iSBN2;
-		Title=title2;
-		Author=author2;
-		Signature=signature2;
-		// TODO Auto-generated constructor stub
-	}
-	public static void main(String[] args) {
-			
+		setISBN(iSBN2);
+		setTitle(title2);
+		setAuthor(author2);
+		setSignature(signature2);
 		
-		// TODO Auto-generated method stub
-
 	}
 	public String getISBN() {
-		return ISBN;
+		return isbn;
 	}
 	public void setISBN(String iSBN) {
-		ISBN = iSBN;
+		this.isbn = iSBN;
 	}
-	public String getTitle() {
-		return Title;
-	}
+	
 	public void setTitle(String title) {
-		Title = title;
+		this.title = title;
 	}
-	public String getAuthor() {
-		return Author;
-	}
+	
 	public void setAuthor(String author) {
-		Author = author;
+		this.author = author;
 	}
-	public String getSignature() {
-		return Signature;
-	}
+	
 	public void setSignature(String signature) {
-		Signature = signature;
+		this.signature = signature;
 	}
 
 }
