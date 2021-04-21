@@ -8,6 +8,6 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(features="uses_case",glue="bookproject")
 
-public class Config {
+public class Config  {
 
 }

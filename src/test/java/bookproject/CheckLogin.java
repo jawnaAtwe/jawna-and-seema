@@ -39,14 +39,14 @@ public class CheckLogin {
 	@When("admain click login button and it is valid")
 	public void admain_click_login_button_and_it_is_valid() {
 		
-		b=fc.Check(name, pass);
+		b=fc.check(name, pass);
 		
 	}
 
 	@Then("admain should be loged in and open next page")
 	public void admain_should_be_loged_in_and_open_next_page() {
 		assertTrue(b);
-		JOptionPane.showMessageDialog(null, "LOGIn Done");
+		//JOptionPane.showMessageDialog(null, "LOGIn Done");
 		 
 	}
 
@@ -54,31 +54,19 @@ public class CheckLogin {
 	@When("admain click login button and it is invalid")
 	public void admain_click_login_button_and_it_is_invalid() {
 		
-		b=fc.Check(name, pass);
+		b=fc.check(name, pass);
 	   
 	}
 
-	@Then("admain should not be loged in")
-	public void admain_should_not_be_loged_in() {
-		
+	@Then("admain should not be loged in and show a message invalid password")
+	public void admain_should_not_be_loged_in_and_show_a_message_invalid_password() {
+	   
+	
 		 assertTrue(!b);
+	   //JOptionPane.showMessageDialog(null, "Invalid Password!!");
 	   
+	
 	}
-
-	@Then("Show a message invalid password")
-	public void show_a_message_invalid_password() {
-		
-		JOptionPane.showMessageDialog(null, "Invalid Password!!");
-	   
-	}
-
-	@Then("clear password")
-	public void clear_password() {
-		
-		//clean textfield  for password
-		
-	}
-
 
 
 }
